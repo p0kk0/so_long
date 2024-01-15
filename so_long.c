@@ -5,14 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 17:14:32 by felsanch          #+#    #+#             */
-/*   Updated: 2023/10/30 17:35:14 by felsanch         ###   ########.fr       */
+/*   Created: 2024/01/15 16:07:48 by felsanch          #+#    #+#             */
+/*   Updated: 2024/01/15 18:42:45 by felsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	main (void)
-{
-	char *ft_get_map(argc[2])
+#include <stdio.h>
 
-	//PINTAMOS MAPA Y GESTIONAMOS TECLAS
+int	main(void)
+{
+	ssize_t	fd;
+	char	**map;
+
+	fd = open("firstmap.ber", RDONLY);
+	if (fd == -1)
+		return ("Error openning the map.", 0);
+	map = ft_map(fd);
+
+	//COMPROBAMOS QUE NUESTRA MATRIZ CUMPLE LAS CONDICIONES
+	//PINTAMOS MAPA
+	//GESTIONAMOS TECLAS
+	close(fd);
 }
