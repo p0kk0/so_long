@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: felsanch@student.42malaga.com <felsanch    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 16:07:48 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/15 18:42:45 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/16 09:28:37 by felsanch@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(void)
 		return ("Error openning the map.", 0);
 	map = ft_map(fd);
 
-	//COMPROBAMOS QUE NUESTRA MATRIZ CUMPLE LAS CONDICIONES
+
 	//PINTAMOS MAPA
 	//GESTIONAMOS TECLAS
 	close(fd);
