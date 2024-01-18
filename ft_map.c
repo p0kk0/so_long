@@ -6,9 +6,11 @@
 /*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:32:59 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/17 20:26:53 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/18 17:28:37 by felsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "so_long.h"
 
 int	ft_characters(char **matrix_map)
 {
