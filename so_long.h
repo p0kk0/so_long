@@ -6,7 +6,7 @@
 /*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:19:26 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/18 18:19:56 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/20 13:36:45 by felsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ typedef struct s_game
 {
 	int	width;
 	int	heigh;
-	int i;
-	int j;
+	int	i;
+	int	j;
 }	t_game;
 
 #endif

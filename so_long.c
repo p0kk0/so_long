@@ -6,16 +6,11 @@
 /*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 16:07:48 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/18 18:31:42 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/20 17:47:10 by felsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
-
-// void	leaks(void)
-// {
-// 	system("leaks -q a.out");
-// }
 
 // void ft_hook(void* param)
 // {
