@@ -6,7 +6,7 @@
 /*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:32:59 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/18 17:28:37 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/23 18:51:36 by felsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,7 @@ void	ft_map(t_game *mygame, char *map_name)
 {
 	ssize_t	fd;
 	char	*line;
+	return (printf("Entra."));
 
 	if (ft_map_extension(map_name) != 0)
 		return (ft_printf("Wrong Map Extension.\n"), EXIT_FAILURE);
