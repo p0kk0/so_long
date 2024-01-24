@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: felsanch@student.42malaga.com <felsanch    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:19:26 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/23 18:53:53 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/24 12:28:56 by felsanch@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,9 @@
 # define WHIDTH 720
 # define HEIGH 480
 
-typedef struct s_game
+typedef struct s_struct
 {
-	int	width;
-	int	heigh;
-}	t_game;
+	
+}	t_struct;
 
 #endif

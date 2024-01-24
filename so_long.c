@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: felsanch@student.42malaga.com <felsanch    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 16:07:48 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/23 19:07:18 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/24 12:31:46 by felsanch@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,15 @@
 
 int	main(int argc, char **argv)
 {
-				//t_game	checked_map;
+	t_struct	st;
 	//mlx_t			*game;
 	//mlx_texture_t	*txt;
 	//mlx_image_t		*img;
-				//t_game	st;
-
-	//(void)argv;
 	if (argc != 2)
 		return (ft_printf("Wrong Number of Arguments.\n"), 0);
-	init_struct(&checked_map);
-	ft_map(&checked_map, argv[1]);
-				//ft_map();
+	init_struct(&st);
+	ft_map(&ft, argv[1]);
+	
 	//game = mlx_init(1280, 720, "Aguacate", false);
 				//ft_load_images(&st);
 	//txt = mlx_load_png("./img.png");

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_map.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felsanch <felsanch@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: felsanch@student.42malaga.com <felsanch    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:32:59 by felsanch          #+#    #+#             */
-/*   Updated: 2024/01/23 18:51:36 by felsanch         ###   ########.fr       */
+/*   Updated: 2024/01/24 12:46:02 by felsanch@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,30 +102,31 @@ char	*ft_map_reading(char *matrix_map)
 	ft_map_conditions(matrix_map);
 }
 
-int	ft_map_extension(char *map_name)
+int	ft_map_extension(char *path)
 {
 	char	*extension;
 
-	extension = ft_strrchr(map_name, '.');
-	if (ft_strncmp(extension, ".ber", 4) == NULL)
+	extension = ft_strrchr(path, '.');
+	if (ft_strncmp(extension, ".ber", 4) == 0)
 		return (EXIT_SUCCESS);
 	else
 		return (EXIT_FAILURE);
 }
 
-void	ft_map(t_game *mygame, char *map_name)
+void	ft_map(t_struct *st, char *path)
 {
 	ssize_t	fd;
 	char	*line;
-	return (printf("Entra."));
 
-	if (ft_map_extension(map_name) != 0)
+	if (ft_map_extension(path) != 0)
 		return (ft_printf("Wrong Map Extension.\n"), EXIT_FAILURE);
-	fd = open(map_name, O_RDONLY);
+	fd = open(path, O_RDONLY);
 	if (fd == -1)
 		return (ft_printf("Map Openning Error.\n"), EXIT_FAILURE);
-	line = get_next_line(fd);
-	if (!line)
-		return ("Void Map!", EXIT_FAILURE);
+	while (line = get_next_line(fd) != NULL);
+	{
+		//guardamos en la estructura st
+		free (line);
+	}
 	return (0);
 }
